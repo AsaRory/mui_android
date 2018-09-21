@@ -1,0 +1,6 @@
+# Referenced at E:\github\android\HBuilder-Hello\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:178
+-keep class io.dcloud.application.DCloudApplication { <init>(...); }
+
+# Referenced at E:\github\android\HBuilder-Hello\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:625
+-keep class io.dcloud.multiprocess.activity.WebAppActivity1 { <init>(...); }
+

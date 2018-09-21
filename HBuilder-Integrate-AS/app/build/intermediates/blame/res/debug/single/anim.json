@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "E:\\github\\android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\dcloud_slide_right_in.xml",
+        "source": "C:\\Users\\867123882\\.android\\build-cache\\026a6544bb5c6f85f03a9c2587ad6fc631450ba0\\output\\res\\anim\\dcloud_slide_right_in.xml"
+    },
+    {
+        "merged": "E:\\github\\android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\dcloud_slide_out_to_right.xml",
+        "source": "C:\\Users\\867123882\\.android\\build-cache\\026a6544bb5c6f85f03a9c2587ad6fc631450ba0\\output\\res\\anim\\dcloud_slide_out_to_right.xml"
+    },
+    {
+        "merged": "E:\\github\\android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\dcloud_slide_in_from_top.xml",
+        "source": "C:\\Users\\867123882\\.android\\build-cache\\026a6544bb5c6f85f03a9c2587ad6fc631450ba0\\output\\res\\anim\\dcloud_slide_in_from_top.xml"
+    },
+    {
+        "merged": "E:\\github\\android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\dcloud_slide_static.xml",
+        "source": "C:\\Users\\867123882\\.android\\build-cache\\026a6544bb5c6f85f03a9c2587ad6fc631450ba0\\output\\res\\anim\\dcloud_slide_static.xml"
+    },
+    {
+        "merged": "E:\\github\\android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\dcloud_slide_right_out.xml",
+        "source": "C:\\Users\\867123882\\.android\\build-cache\\026a6544bb5c6f85f03a9c2587ad6fc631450ba0\\output\\res\\anim\\dcloud_slide_right_out.xml"
+    },
+    {
+        "merged": "E:\\github\\android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\dcloud_slide_out_to_top.xml",
+        "source": "C:\\Users\\867123882\\.android\\build-cache\\026a6544bb5c6f85f03a9c2587ad6fc631450ba0\\output\\res\\anim\\dcloud_slide_out_to_top.xml"
+    },
+    {
+        "merged": "E:\\github\\android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\dcloud_slide_in_from_right.xml",
+        "source": "C:\\Users\\867123882\\.android\\build-cache\\026a6544bb5c6f85f03a9c2587ad6fc631450ba0\\output\\res\\anim\\dcloud_slide_in_from_right.xml"
+    }
+]

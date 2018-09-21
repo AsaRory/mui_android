@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support.test:monitor-1.0.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/4acf404c93487d8bb95837476a93e20914a4f157/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/4acf404c93487d8bb95837476a93e20914a4f157/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\AMap_3DMap_V2.4.1.jar:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/AMap_3DMap_V2.4.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,7 @@
+#Fri Sep 21 18:24:32 CST 2018
+base.0=E\:\\github\\android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_1395699da68a33e6120858f013e1db8fc937e42f
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=E\:\\github\\android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_54bd5c46b353aa0261b8abfb1728942a40c7d295\\classes.dex
+base.1=E\:\\github\\android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_54bd5c46b353aa0261b8abfb1728942a40c7d295
+file.0=E\:\\github\\android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_1395699da68a33e6120858f013e1db8fc937e42f\\classes.dex

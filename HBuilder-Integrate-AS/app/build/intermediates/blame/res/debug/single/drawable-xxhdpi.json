@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\github\\android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\push.png",
+        "source": "E:\\github\\android\\HBuilder-Integrate-AS\\app\\src\\main\\res\\drawable-xxhdpi\\push.png"
+    },
+    {
+        "merged": "E:\\github\\android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\splash.png",
+        "source": "E:\\github\\android\\HBuilder-Integrate-AS\\app\\src\\main\\res\\drawable-xxhdpi\\splash.png"
+    },
+    {
+        "merged": "E:\\github\\android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon.png",
+        "source": "E:\\github\\android\\HBuilder-Integrate-AS\\app\\src\\main\\res\\drawable-xxhdpi\\icon.png"
+    }
+]
