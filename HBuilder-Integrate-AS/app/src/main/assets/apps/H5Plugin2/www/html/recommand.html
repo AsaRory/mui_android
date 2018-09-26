@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/app.css" rel="stylesheet" />
+		<style type="text/css">
+			.top_img{
+				width: 261px;
+				height: 37px;
+				margin: auto;
+			}
+			
+			.select_type{
+				height: 40px;
+				align-items: center;
+				justify-content: space-around;
+				background: #ffffff;
+				color: #333333;
+				font-size: 14px;
+				font-weight: bold;
+			}
+			
+			.center_wrap{
+				align-items: center;
+			}
+			
+			.center_wrap img{
+				width: 9px;
+				height: 11px;
+				margin-left: 10px;
+			}
+			
+			.active{
+				color: #ff5445;
+			}
+			
+			.list_wrap{
+				padding: 0px;
+				box-sizing: border-box;
+			}
+			
+			.item_wrap{
+				background-image: url(../images/card_bg.png);
+				background-size: 100% 100%;
+				background-position: 0 0;
+				background-repeat: no-repeat;
+				height: 97px;
+				width: 100%;
+				padding: 10px 20px;
+			}
+			
+			.item_tile_wrap{
+				justify-content: space-between;
+				align-items: center;
+				font-size: 12px;
+				color: #333333;
+				font-weight: bold;
+				padding: 5px 0px;
+				border-bottom: 1px solid #dddddd;
+				height: 25px;
+				line-height: 25px;
+			}
+			
+			.high_rate{
+				width: 49px;
+				height: 15px;
+				margin-right: 5px;
+			}
+			
+			.recommand_icon{
+				width: 32px;
+				height: 15px;
+			}
+			
+			.item_title_num{
+				margin-left: 5px;
+			}
+			
+			.item_center_wrap{
+				text-align: left;
+				font-size: 14px;
+				font-weight: bold;
+				padding: 10px 0px;
+			}
+			
+			.item_center_day{
+				font-size: 12px;
+			}
+			
+			.mui-progressbar{
+				height: 16px;
+				border-radius: 10px;
+				background: #FFD9D6;
+			}
+			.mui-progressbar span{
+				background: #Ff5445;
+				border-radius: 10px;
+			}
+			
+			#progress_id{
+				position: relative;
+			}
+			
+			#progress_id .success_rate{
+				position: absolute;
+				top: -2px;
+				left: 0px;
+				color: #ffffff;
+				font-size: 12px;
+				padding-left: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" >
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">智能推荐</h1>
+		    <img src="../images/custom_icon.png"  />
+		</header>
+		
+		
+		<div class="mui-content" style="text-align: center; background: #F2F2F2;">
+			<img src="../images/recommand_top_icon.png" class="top_img" />
+			
+			<div class="row select_type">
+				<span class="highType active" >高成功率</span>
+				<div class="center_wrap row timeType" >
+					<span>期限</span>
+					<img src="../images/change_type_icon.png"/>
+				</div>
+				<span class="preType">上次浏览</span>
+			</div>
+			
+			<ul class="list_wrap">
+				<li class="item_wrap col">
+					<div class="row item_tile_wrap">
+						<div >
+							<span>推荐产品</span>
+							<span class="item_title_num">347号</span>
+						</div>
+						<div class="row">
+							<img src="../images/high_rate.png" class="high_rate"/>
+							<img src="../images/recommend_icon.png" class="recommand_icon"/>
+						</div>
+					</div>
+					
+					<div class="item_center_wrap">
+						<span >
+							500-1000元 / 
+						</span>
+						<span class="item_center_day">
+							7天-14天
+						</span>
+					</div>
+					<div id="progress_id">
+						<p class="mui-progressbar mui-progressbar-in" data-progress="20"><span></span></p>
+						<span class="success_rate">成功率：81.3%</span>
+					</div>
+					
+				</li>
+				
+				<li class="item_wrap col">
+					<div class="row item_tile_wrap">
+						<div >
+							<span>推荐产品</span>
+							<span class="item_title_num">347号</span>
+						</div>
+						<div class="row">
+							<img src="../images/high_rate.png" class="high_rate"/>
+							<img src="../images/recommend_icon.png" class="recommand_icon"/>
+						</div>
+					</div>
+					
+					<div class="item_center_wrap">
+						<span >
+							500-1000元 / 
+						</span>
+						<span class="item_center_day">
+							7天-14天
+						</span>
+					</div>
+					<div id="progress_id">
+						<p class="mui-progressbar mui-progressbar-in" data-progress="20"><span></span></p>
+						<span class="success_rate">成功率：81.3%</span>
+					</div>
+					
+				</li>
+				
+				
+			</ul>
+		</div>
+		<div class="list_bottom_warning_text">
+			我是有底线的~
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			
+			
+			//进度条 设置
+			var progressbar = mui('#progress_id');
+			mui(progressbar).progressbar().setProgress(10);
+			
+			var $$ = jQuery.noConflict();
+			$$(document).ready(function(){
+				var highType = $$('.highType');
+				var timeType = $$('.timeType');
+				var preType = $$('.preType');
+				
+				highType.click(function(){
+					highType.css('color', '#ff5445');
+					timeType.css('color', '#333333');
+					preType.css('color', '#333333');
+				})
+				
+				timeType.click(function(){
+					highType.css('color', '#333333');
+					timeType.css('color', '#ff5445');
+					preType.css('color', '#333333');
+				})
+				
+				preType.click(function(){
+					highType.css('color', '#333333');
+					timeType.css('color', '#333333');
+					preType.css('color', '#ff5445');
+				})
+				
+			});
+			
+			//点击高成功率
+//			function highTypeClick(){
+//				highType.attr('color', '#ff5445');
+//				timeType.attr('color', '#333333');
+//				preType.attr('color', '#333333');
+//			}
+//			
+//			//点击高成功率
+//			function timeTypeClick(){
+//				highType.attr('color', '#333333');
+//				timeType.attr('color', '#ff5445');
+//				preType.attr('color', '#333333');
+//			}
+			
+			
+		</script>
+	</body>
+
+</html>

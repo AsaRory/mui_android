@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello MUI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="../css/mui.min.css">
+    <link rel="stylesheet" href="../css/app.css">
+    <style type="text/css">
+        body,
+        html {
+            height: 100%;
+            width: 100%;
+            background-color: #f4f4f4;
+        }
+        
+        .mui-content {
+            background-color: #f4f4f4;
+        }
+        
+        .mui-table-view:after {
+            background-color: #f4f4f4;
+        }
+        
+        .list_wrap {
+            padding: 10px;
+            justify-content: space-between;
+            color: #333333;
+        }
+        
+        .left_top_text,
+        .right_bottom_text {
+            font-size: 14px;
+        }
+        
+        .leave_money,
+        .leave_time {
+            font-size: 9px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--下拉刷新容器-->
+    <div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+        <div class="mui-scroll">
+            <!--数据列表-->
+            <ul class="mui-table-view" style="background: #ffffff;">
+
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- <div class="list_bottom_warning_text">我是有底线的~</div> -->
+
+    <script src="../js/mui.min.js"></script>
+    <script src="../js/jquery-2.1.1.min.js"></script>
+    <script src="../js/myStorage.js"></script>
+    <script src="../js/app.js"></script>
+    <script>
+        mui.init({
+            pullRefresh: {
+                container: '#pullrefresh',
+                down: {
+                    callback: pulldownRefresh
+                },
+                up: {
+                    contentrefresh: '正在加载...',
+                    callback: pullupRefresh
+                }
+            }
+        });
+
+        console.log(Global);
+        // Global.errorDetail();
+        var user = myStorage.getItem("user");
+        var userId, current = 1;
+        if (user && user.userId) {
+            userId = user.userId;
+        }
+
+
+
+        //获取流水数据
+        function getFlowList(pageIndex) {
+
+            Global.commonAjax({
+                    url: "user/flowlist",
+                    userId: userId,
+                    page: {
+                        current: pageIndex,
+                        size: 20
+                    }
+                },
+                function(data) {
+
+                },
+                function(err) {
+
+                }
+            )
+        }
+
+        /**
+         * 下拉刷新具体业务实现
+         */
+        function pulldownRefresh() {
+            setTimeout(function() {
+                var cells = [{
+                    lastestBalance: 20,
+                    consumeTm: '2018-09-20',
+                    isAdd: true,
+                    consumeBalance: 500
+                }, {
+                    lastestBalance: 30,
+                    consumeTm: '2018-09-18',
+                    isAdd: false,
+                    consumeBalance: 300
+                }, {
+                    lastestBalance: 40,
+                    consumeTm: '2018-09-21',
+                    isAdd: true,
+                    consumeBalance: 400
+                }, {
+                    lastestBalance: 50,
+                    consumeTm: '2018-09-22',
+                    isAdd: false,
+                    consumeBalance: 100
+                }, ];
+
+                var table = document.body.querySelector('.mui-table-view');
+                table.innerHTML = "";
+                // var cells = document.body.querySelectorAll('.mui-table-view-cell');
+                for (var i = 0, len = cells.length; i < len; i++) {
+                    var li = document.createElement('li');
+                    li.className = 'mui-table-view-cell list_wrap row';
+                    li.innerHTML = '<div class="col ">' +
+                        '<span class="left_top_text">邀请赚钱' + i + '</span>' +
+                        '<span class="leave_money">余额' + cells[i].lastestBalance + '</span>' +
+                        '</div>' +
+                        '<div class="col ">' +
+                        '<span class="leave_time">' + cells[i].consumeTm + '</span>' +
+                        '<span class="right_bottom_text">' + (cells[i].isAdd ? '+' : '-') + cells[i].consumeBalance + '</span>' +
+                        '</div>';
+                    //下拉刷新，新纪录插到最前面；
+                    table.insertBefore(li, table.firstChild);
+                }
+                mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); //refresh completed
+            }, 1500);
+        }
+        /**
+         * 上拉加载具体业务实现
+         */
+        function pullupRefresh() {
+            setTimeout(function() {
+                var cells = [{
+                    lastestBalance: 20,
+                    consumeTm: '2018-09-20',
+                    isAdd: true,
+                    consumeBalance: 500
+                }, {
+                    lastestBalance: 30,
+                    consumeTm: '2018-09-18',
+                    isAdd: false,
+                    consumeBalance: 300
+                }, {
+                    lastestBalance: 40,
+                    consumeTm: '2018-09-21',
+                    isAdd: true,
+                    consumeBalance: 400
+                }, {
+                    lastestBalance: 50,
+                    consumeTm: '2018-09-22',
+                    isAdd: false,
+                    consumeBalance: 100
+                }, ];
+
+                mui('#pullrefresh').pullRefresh().endPullupToRefresh(true); //参数为true代表没有更多数据了。
+                var table = document.body.querySelector('.mui-table-view');
+                // var cells = document.body.querySelectorAll('.mui-table-view-cell');
+                for (var i = 0, len = cells.length; i < len; i++) {
+                    var li = document.createElement('li');
+                    li.className = 'mui-table-view-cell list_wrap row';
+                    li.innerHTML = '<div class="col ">' +
+                        '<span class="left_top_text">邀请赚钱' + i + '</span>' +
+                        '<span class="leave_money">余额' + cells[i].lastestBalance + '</span>' +
+                        '</div>' +
+                        '<div class="col ">' +
+                        '<span class="leave_time">' + cells[i].consumeTm + '</span>' +
+                        '<span class="right_bottom_text">' + (cells[i].isAdd ? '+' : '-') + cells[i].consumeBalance + '</span>' +
+                        '</div>';
+                    table.appendChild(li);
+                }
+            }, 1500);
+        }
+        // if (mui.os.plus) {
+        //     mui.plusReady(function() {
+        //         setTimeout(function() {
+        //             mui('#pullrefresh').pullRefresh().pullupLoading();
+        //         }, 10);
+
+        //     });
+        // } else {
+        //     mui.ready(function() {
+        //         mui('#pullrefresh').pullRefresh().pullupLoading();
+        //     });
+        // }
+    </script>
+</body>
+
+</html>

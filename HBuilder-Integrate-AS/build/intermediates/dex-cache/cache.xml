@@ -3,381 +3,525 @@
 
     <item
         is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\aps.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="a3ee69bbdcf13f8ae21a85400b3198d7621361ba">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\aps_d8ee51d30ac79b920559b25cb38f251dbdbd849f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\messaging.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="0bfd4958c3a0bf677549ac78d44d9452fd5af101">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\messaging_923654d493aa5010fa240e833eeaa979563eef5d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\speech_ifly.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="9b000553404786c625318e87970dfe9c12a06760">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\speech_ifly_c8b9d3c34b01e65bb4875df80a2b46e59988ff07\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\payment-alipay.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="a392fbac20a47b38db43e53539d1062e6253456d">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\payment-alipay_d0115b7687740a402db033d28fb310036de6944a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\qq_mta-sdk-1.6.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="c184c69f43b1fe46390f7123717c65bd844bccb6">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\qq_mta-sdk-1.6.2_6120bac955794c5bbf1c2f4e0fd9a1cfc2741d9e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\speech.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="0ba459b886cb69f896701d961dc55e5518869db5">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\speech_15026dc33de3333a8a0d6215924faca858b12d57\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\tx_weibo_sdk_component.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="17d672bf657b4d848d1b33782496fc0dd972072c">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\tx_weibo_sdk_component_37359c415e8fa6de82bc138611e9328a262d17b1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\tx_wx.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="11b09244aedaa51bfd09269637be7c32c60da314">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\tx_wx_8e40a9a4cf64c5ebc35176e8855fd6fc28d0ce2b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_54bd5c46b353aa0261b8abfb1728942a40c7d295\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\alipayutdid.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="4345fa0a5a7768f2f9c86aaab7db9e2906765193">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\alipayutdid_453298761d7f81044390144a7ea560dcb5c67750\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\aps-dhPush.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="fde83b90e3f0d1ed306b657cbef1b20b67a363e0">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\aps-dhPush_bdef8727d37eaece034d799dec3a23f07bebec9c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="626c13f13c32677bb90ddbf8a5a4f3cd8db19cbf">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_1395699da68a33e6120858f013e1db8fc937e42f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\AMap_3DMap_V2.4.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="d13e56038f3e198d129da3966008dff00365636a">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\AMap_3DMap_V2.4.1_ea647e605ada945d1738426b397e8bb77d76b56e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\oauth-weixin.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="d73f82c38e91388570e62b0e2a59088acc850af7">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\oauth-weixin_7431dc3e38d9fc2640475c185de47e62006cbc8d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\Msc.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="994d12017bc2c9ba570180cde5500689d134e6e6">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\Msc_a62ed107fc75feffff5463ab6cd6ea1f8720ffd3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\sinaweibo4.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="150db4f7f50eeca5cd95b87b0bb0337dbc2bdffb">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\sinaweibo4.1_11c9c3a1663220d6a5f428b8feaafcf495f8cded\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\qq_sdk_v3.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="84c7cf027dfd4517eb51d5898999a7f2f74f99cc">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\qq_sdk_v3.1.0_8a998e8e8250af26e03385629beb7c15ed3da500\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\share-tencent.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="f476b6d310b4d1ca9ad4b19be82542f3bb220635">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\share-tencent_340d36b169ef89c1a729f656ecd951893a516cee\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\MiPush_SDK_Client_3_1_2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="be4a7a20473c8e53375e59bef1af1bccaf1a7276">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\MiPush_SDK_Client_3_1_2_b7d76792be5a84d137a1dcc532e429c0b870a53a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\share-qq.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="072fd11b5ccc155d8bb5d5d6238b40afd60b2195">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\share-qq_ca9979a6919fa3c567406a5af67ddd3ab60a8d0e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\statistics-umeng.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="d6c13aa866ff06ecffe3bb4b37e5a6887187ae6b">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\statistics-umeng_fee4143346a01bc379f95374d34afcf4a930f4ac\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\umeng-analytics-v6.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="aab9085bca0c26dcb9cb11837a5f5e22cc102a5e">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\umeng-analytics-v6.0.1_bc42def2a6d803db6d80772ddde8aab6b8a20f5a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\AMap_Location_V3.3.0_20170118.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="299ccce875c1bbd5eb2802923ae89946e22b7ee6">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\AMap_Location_V3.3.0_20170118_a6c7738151da0a99e7b10df1a8945feddc3985bc\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\share-weixin.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="241254c6186b5acad020f4d73a84ed95454fd559">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\share-weixin_029a9fa2b4c0f50a124fd13d2b06353aaa591936\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\geolocation-amap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="4063f47d2c43cc85043b91f0c5d622e14e648b84">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\geolocation-amap_b60fb1708f8c53dedeb0c6038424ddbb551c0773\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\payment-weixin.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="f92cf6fbcba3b7a5ca69935df38dc37ce63f5d1f">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\payment-weixin_cb490064b3e2cd70c9b19a6ddc303f68ba736968\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\AMap_Services_V2.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="3057067b0d15469c99c2e8b1a87d66c94862ac7a">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\AMap_Services_V2.4.0_a9b5cd45f7b545146bb0e055e31aff1219e52db1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\contacts.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="ed5e3eba8b7903a2fddc46212cd968a0cd8e47e6">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\contacts_0afd2e4733ad2b6809556c062e867e3425a80345\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\oauth-miui.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="af8a236934add1a3ea0f2e6a0358832a42ed92b5">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\oauth-miui_5c5b3b898103989867dc3b19e9099eef3a3df5f6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\oauth-sina.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="3f88eca7ce7761a4d56ec55cde1499b802a1e47b">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\oauth-sina_19b0d5697d8dd120a7c5e318675eb64f16faceaf\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\xiaomi-oauth.1.6.6.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="2f8a6148dee5840be149828710ce4248dc283e34">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\xiaomi-oauth.1.6.6_68b67335dd33d5fab6f152883b0fd8b83cefb5ab\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\tx_weibo_sdk.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="33921321a220f3927929217aeed32befede21502">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\tx_weibo_sdk_dc1da836f0ecc53c3496198391accc1578d68d1b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\aps-igexin.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="c479a6f4a2991ed06449b74afe8fea15dc4a5749">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\aps-igexin_a2aea8ad0f50b2e92807040eff147a5a912390a8\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\geolocation-baidu.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="45d1304b8ab6f314e9ee710e5262c79157c7653d">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\geolocation-baidu_d4b6e6c3bea4c5aefc9640c20759425bdd188c36\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\map-baidu.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="894209db32c15bacda540a69b5818423931d299c">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\map-baidu_6db45a57a5488763c2b2d4bab02a1f2ac2c020a7\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\tx_weibo_sdk-httpclient-3.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="d6364bcc1b2b2aa69d008602d36a700453648560">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\tx_weibo_sdk-httpclient-3.0.1_f69ab2329bd4f24551d1dd2c57ee3e54d342d7ec\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\GetuiSDK2.10.3.5.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="d70dcea02114e0414060311e3733db5c40498b58">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\GetuiSDK2.10.3.5_9f4fb88cd47dc7cba24f4d4c116649ca86ddc92f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\map-amap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="205f2f27d45e046ef630545fab06985ca252938a">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\map-amap_83750334f6e81b1d4a2d8b617a80c0c378551559\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\alipaySingle-20161222.jar"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\alipaySingle-20161222.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
         sha1="795c38473dc8c277a8a07694592e13d7e7601108">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\alipaySingle-20161222_5ca2ddadb215a4360d5e5bd8386d3120cd1bffbf\classes.dex" />
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\alipaySingle-20161222_8c07b91e8340f0c3b95be0868c13a88ea17c7d74\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\aps-xiaomi.jar"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\share-tencent.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="c6af4c3f9b2ae9ae78475cf57e99b2bff0f86de2">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\aps-xiaomi_3025ae3c94f95e783c262ace18f8dd91f2817df0\classes.dex" />
+        sha1="f476b6d310b4d1ca9ad4b19be82542f3bb220635">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\share-tencent_99712a8dbea83dc3917815ba4c9c58918dcc50fc\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\share-sina.jar"
+        jar="C:\Users\Administrator\.android\build-cache\1d10b5b8644a481677b523b434d831d54de2c141\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="e99f71ffb83780719087071be61cfebb421186ed">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\share-sina_15b6cbfa1b8a89847576c24c0c0d69a945305fa0\classes.dex" />
+        sha1="7113302c965566b66df46c6ca75ea301576114a5">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_86dd79efbde65505f6681ddd6756f26ef3100985\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="E:\github\android\HBuilder-Integrate-AS\app\libs\oauth-qq.jar"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\map-amap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="205f2f27d45e046ef630545fab06985ca252938a">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\map-amap_51639e213962f844eefc1ff69b281b1fd18b5c09\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\map-baidu.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="894209db32c15bacda540a69b5818423931d299c">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\map-baidu_4eb132a72b3fb258e0faa5f3c8c44aaf583ee433\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\contacts.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ed5e3eba8b7903a2fddc46212cd968a0cd8e47e6">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\contacts_a6a7946c6c1821bcc31d2a03339a9d22cd47e3ff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\aps-igexin.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c479a6f4a2991ed06449b74afe8fea15dc4a5749">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\aps-igexin_052cb3ada28340645550802cc90ae61724361c82\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_f65022a459e2c8977b8fbe5a916fd78108c19a7e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\AMap_Services_V2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3057067b0d15469c99c2e8b1a87d66c94862ac7a">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\AMap_Services_V2.4.0_be5e22f9cb1fc3787adb7152d0c2510689c0cc25\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\GetuiSDK2.10.3.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d70dcea02114e0414060311e3733db5c40498b58">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\GetuiSDK2.10.3.5_f5558eac8ef7f263524936d1b33fb5264b35fc7c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\messaging.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0bfd4958c3a0bf677549ac78d44d9452fd5af101">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\messaging_4ed67e54e13ed5c0565e170537bca2718befba12\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\sinaweibo4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150db4f7f50eeca5cd95b87b0bb0337dbc2bdffb">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\sinaweibo4.1_479bf7b0d39c0cd417f49102bc669dcbbb44dfb6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\84dfacf1186223e0926894f299c7f8ceaf5712d7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7880825917f7ad26d7fdfaa421cd1e1827d13c10">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_773a82edb13022eec3b96ec5ca9a6c6a4d76d04a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\oauth-sina.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3f88eca7ce7761a4d56ec55cde1499b802a1e47b">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\oauth-sina_66c2a6e3b3215122044ac3b9ad22a3a650d3f08b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\tx_weibo_sdk-httpclient-3.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d6364bcc1b2b2aa69d008602d36a700453648560">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\tx_weibo_sdk-httpclient-3.0.1_26abfab3b3867369ff60a0e85ef5b00b21e2215e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\oauth-miui.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="af8a236934add1a3ea0f2e6a0358832a42ed92b5">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\oauth-miui_1c0c1f4924b37ee69a8c0889f42dbf9e8b83e0b3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\share-qq.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="072fd11b5ccc155d8bb5d5d6238b40afd60b2195">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\share-qq_98c39ac4bf97ab20e6ef8ab9b4ed58ef135f670c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8b05e134f332f2e5a80ef75b990f868d7b02ff3d">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_3945c93087af07680963b0e8fb9d6ed1f137aeb0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\84dfacf1186223e0926894f299c7f8ceaf5712d7\output\jars\libs\jcore-android_v1.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0149c38b9688b28e80fab18616d4e80c1906d573">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\10\jcore-android_v1.1.1_75b30b506057b4bbb71beaa9f260c92fb1ed2a9b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\7fb6c4e2ef7e99315686029bc4e3b3eee7fd7fb1\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_978fab4e5021faa4a262196d14f6bf062d93f70a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\share-weixin.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="241254c6186b5acad020f4d73a84ed95454fd559">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\share-weixin_a57b93246066d7eb62333eb07f1575f1840e005c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Tool\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.2.0_32807328c090d70c3326ee9194e55ad933423b81\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\qq_mta-sdk-1.6.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c184c69f43b1fe46390f7123717c65bd844bccb6">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\qq_mta-sdk-1.6.2_8fd46fd04eaf6f989a623848db8b47e057742141\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\a63637704f8090d7b72add3eeaa6e8fc5423c79e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_76abf82acba557a16f8acac1bdf9b75c26347519\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\23982918dee7b2a70dbe614db63bc04eedcf480a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_be4039221b79febbbcbe7156daa899a1d6b63223\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\AMap_Location_V3.3.0_20170118.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="299ccce875c1bbd5eb2802923ae89946e22b7ee6">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\AMap_Location_V3.3.0_20170118_9574ff4ace344169c62c10e237a4204c39a57f17\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\alipayutdid.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4345fa0a5a7768f2f9c86aaab7db9e2906765193">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\alipayutdid_9fbd83967a17eae4a357bada8b2e5b24fb6b5c49\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\Msc.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="994d12017bc2c9ba570180cde5500689d134e6e6">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\Msc_7516614cc3e8b93e967b3d5f2b5226e6295a9934\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\7f0df8ac1c78a602db5c0e38636705915529f362\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_69801795f7aa401ef9cd63f55aff14da6b8f2c53\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\speech_ifly.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9b000553404786c625318e87970dfe9c12a06760">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\speech_ifly_7fd0a6dca61884d8a96c4539dbaac2a4ecc92f1c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\oauth-weixin.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d73f82c38e91388570e62b0e2a59088acc850af7">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\oauth-weixin_b5dd073b333f303272a290bccfbfbde5eb0b5410\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\oauth-qq.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
         sha1="2f2df273698d89659d2b9698337a411c6cb7d0a4">
-        <dex dex="E:\github\android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\oauth-qq_cfc44136383e91715d3af26b92257d4000e57c90\classes.dex" />
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\oauth-qq_7fe71aed227906331336da9d658550cd2969160f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\payment-weixin.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f92cf6fbcba3b7a5ca69935df38dc37ce63f5d1f">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\payment-weixin_f8268364c9775a4b231bf34fc4a2348c15206302\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\speech.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0ba459b886cb69f896701d961dc55e5518869db5">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\speech_c7e98b0adef704dbb3a8050ff4ea87b91a641419\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\xiaomi-oauth.1.6.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2f8a6148dee5840be149828710ce4248dc283e34">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\xiaomi-oauth.1.6.6_026e7f2c136a50063076b5b815c0ee6f4bbf3b75\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\qq_sdk_v3.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="84c7cf027dfd4517eb51d5898999a7f2f74f99cc">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\qq_sdk_v3.1.0_200b4419856b014a8737b65f448e2424183eb272\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\geolocation-baidu.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45d1304b8ab6f314e9ee710e5262c79157c7653d">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\geolocation-baidu_5a1e79fce6384d27694eb8219b3fb3d7cee5201c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\MiPush_SDK_Client_3_1_2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="be4a7a20473c8e53375e59bef1af1bccaf1a7276">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\MiPush_SDK_Client_3_1_2_af47e55effa82828081c82d40d17db16641515d8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\e7d346c0c0640a3d02f866585e367f643abc05a2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_839a6653c5539a3d469ad28bf0b0adc5d5039e8e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Tool\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.1\constraint-layout-solver-1.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1ad79631209e77b0a2730fc112b4cc0c66a95132">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.1_2ad829141a41d1847b9a5ffd54d0f16bc0bdbcd0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\payment-alipay.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a392fbac20a47b38db43e53539d1062e6253456d">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\payment-alipay_01cdd1bc9e5704c0d934d3c2fe924688e66f4989\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\statistics-umeng.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d6c13aa866ff06ecffe3bb4b37e5a6887187ae6b">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\statistics-umeng_7450c8de7ccbe6b23bf14573ca1e44f45f366dc5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\aps-dhPush.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="fde83b90e3f0d1ed306b657cbef1b20b67a363e0">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\aps-dhPush_115374c2e0a42b4fa0c81ea33ae34e26e3644923\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\tx_weibo_sdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="33921321a220f3927929217aeed32befede21502">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\tx_weibo_sdk_3abb0def55e8386b5e33eec79c38ad5d388134b3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\21bdb824fd9760bb30f6a7914613d5057b4f3281\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7630ea1fcfb4eed0b171544e3e9623adaabfb5de\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\ad1eb68125da5200cbdf3ba31388b4f93c54af10\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f84b523c847080a75f311002901470798ced1f38\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\tx_wx.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="11b09244aedaa51bfd09269637be7c32c60da314">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\tx_wx_0ce80a3228c490147dc0562c03bc51bdb78800a1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\3969b72b8cfc0970847c91299ecf41e2eddba031\output\jars\libs\jpush-android_v3.0.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7da1fe9424ad39b3e138685e798569b7e404e8df">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\10\jpush-android_v3.0.3_9bc8663bf88358c333d1a788049d0fde3f45b267\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\share-sina.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e99f71ffb83780719087071be61cfebb421186ed">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\share-sina_fb559d2ef6e84c442c7f208994fc34677c3c02f2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\709471bc33a583afab1b0664723bc1348ebce330\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_492d6d4492e7dccd2bc1c772cce74581f155e4dc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\8792e8add3718e7cdb34b0bc93abd1a5c0d06e66\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_eed4169e2087b0206670dc791da51e6324da1540\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\umeng-analytics-v6.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="aab9085bca0c26dcb9cb11837a5f5e22cc102a5e">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\umeng-analytics-v6.0.1_ae7f258cd42f76f3ba15d54534d4e1b8a6afa82d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\.android\build-cache\3969b72b8cfc0970847c91299ecf41e2eddba031\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="637572952be0db98c9288fb9f9fb923a71401be1">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_dc5bc77f6c79aef11dd5829c4413e47b093ef638\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\AMap_3DMap_V2.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d13e56038f3e198d129da3966008dff00365636a">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\AMap_3DMap_V2.4.1_10607e2e43b414e66c139efe770d2ef7bc7cb219\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\aps-xiaomi.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c6af4c3f9b2ae9ae78475cf57e99b2bff0f86de2">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\aps-xiaomi_8aa39af52b0c6bd05aff267a8a2dd64f49e73a8a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\aps.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a3ee69bbdcf13f8ae21a85400b3198d7621361ba">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\aps_c9758e89f43b17b5caad234e965331e37c1b50b5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\geolocation-amap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4063f47d2c43cc85043b91f0c5d622e14e648b84">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\geolocation-amap_3faab874e90e852c9e3da3f395f14625bec1a37d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\tx_weibo_sdk_component.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="17d672bf657b4d848d1b33782496fc0dd972072c">
+        <dex dex="D:\YunFile\github\mui_android\HBuilder-Integrate-AS\app\build\intermediates\transforms\dex\debug\folders\1000\2\tx_weibo_sdk_component_88158c9c960af2010c255dd10f3bc612a3f4c0d4\classes.dex" />
     </item>
 
 </items>

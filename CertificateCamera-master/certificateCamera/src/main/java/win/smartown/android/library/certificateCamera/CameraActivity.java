@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.hardware.Camera;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -160,14 +161,30 @@ public class CameraActivity extends Activity implements View.OnClickListener {
             cameraPreview.focus();
         } else if (id == R.id.camera_close) {
             finish();
+
+            Log.d("dianji","finish");
+
         } else if (id == R.id.camera_take) {
             takePhoto();
+           /* Log.d("dianji","9999999999");
+            Intent i = new Intent();
+            i.putExtra("index", "lululu1");
+
+            setResult(999, i);
+            finish();*/
+
+
         } else if (id == R.id.camera_flash) {
             boolean isFlashOn = cameraPreview.switchFlashLight();
             flashImageView.setImageResource(isFlashOn ? R.mipmap.camera_flash_on : R.mipmap.camera_flash_off);
         } else if (id == R.id.camera_result_ok) {
             goBack();
+
+            Log.d("dianji","goBack");
+
         } else if (id == R.id.camera_result_cancel) {
+            Log.d("dianji","camera_result_cancel");
+
             optionView.setVisibility(View.VISIBLE);
             cameraPreview.setEnabled(true);
             resultView.setVisibility(View.GONE);

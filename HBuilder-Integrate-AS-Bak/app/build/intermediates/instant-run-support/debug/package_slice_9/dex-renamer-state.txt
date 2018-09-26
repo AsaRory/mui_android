@@ -1,0 +1,4 @@
+#Sat Sep 22 17:01:25 CST 2018
+base.0=D\:\\YunFile\\github\\mui_android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_9
+renamed.0=classes.dex
+file.0=D\:\\YunFile\\github\\mui_android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_9\\classes.dex

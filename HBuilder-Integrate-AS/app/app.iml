@@ -62,13 +62,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/rs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/shaders" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/res" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/assets" type="java-test-resource" />
@@ -76,6 +69,13 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/shaders" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/assets" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/builds" />
@@ -104,49 +104,66 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 26 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\oauth-sina.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\Msc.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\oauth-miui.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\speech_ifly.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: lib.5plus.base-release:@aar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\aps-dhPush.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\AMap_Location_V3.3.0_20170118.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\xiaomi-oauth.1.6.6.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\statistics-umeng.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\MiPush_SDK_Client_3_1_2.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\payment-alipay.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\oauth-qq.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\map-baidu.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\GetuiSDK2.10.3.5.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\share-sina.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.android.support:support-fragment-25.2.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\qq_sdk_v3.1.0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\map-baidu.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\payment-alipay.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\alipaySingle-20161222.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.android.support:appcompat-v7-25.2.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\share-qq.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\geolocation-amap.jar:unspecified@jar" level="project" />
     <orderEntry type="library" exported="" name="Gradle: com.android.support:multidex-1.0.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\alipaySingle-20161222.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\payment-weixin.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\oauth-weixin.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\sinaweibo4.1.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\share-qq.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\tx_weibo_sdk-httpclient-3.0.1.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\tx_weibo_sdk_component.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\share-weixin.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\alipayutdid.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\geolocation-amap.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\umeng-analytics-v6.0.1.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\geolocation-baidu.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\share-sina.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\contacts.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\tx_weibo_sdk.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\speech.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\share-tencent.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\qq_mta-sdk-1.6.2.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\aps.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.android.support:support-compat-25.2.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.android.support:animated-vector-drawable-25.2.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\share-weixin.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\statistics-umeng.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\oauth-miui.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\aps-dhPush.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\sinaweibo4.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\aps-xiaomi.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\oauth-sina.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\AMap_Services_V2.4.0.jar:unspecified@jar" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="Gradle: com.android.support:multidex-instrumentation-1.0.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\tx_wx.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\AMap_Services_V2.4.0.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\messaging.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\AMap_3DMap_V2.4.1.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\aps-xiaomi.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\map-amap.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\qq_sdk_v3.1.0.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:E.\github\android\HBuilder-Integrate-AS\app\libs\aps-igexin.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\speech.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\umeng-analytics-v6.0.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\oauth-qq.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\speech_ifly.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\alipayutdid.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\qq_mta-sdk-1.6.2.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.android.support:support-annotations:25.2.0@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: cn.jiguang.sdk:jpush-3.0.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: cn.jiguang.sdk:jcore-1.1.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\AMap_Location_V3.3.0_20170118.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\AMap_3DMap_V2.4.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\messaging.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: lib.5plus.base-release:@aar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\aps-igexin.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\GetuiSDK2.10.3.5.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\jpush-android-2.1.3.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\MiPush_SDK_Client_3_1_2.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.android.support:support-media-compat-25.2.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\tx_weibo_sdk.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\contacts.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\aps.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\oauth-weixin.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\tx_weibo_sdk_component.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\tx_wx.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.android.support.constraint:constraint-layout-1.0.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.android.support:support-core-ui-25.2.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: junit:junit:4.12@jar" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.android.support:support-v4-25.2.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\map-amap.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\xiaomi-oauth.1.6.6.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\Msc.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\geolocation-baidu.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\share-tencent.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.android.support.constraint:constraint-layout-solver:1.0.1@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\payment-weixin.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:D.\YunFile\github\mui_android\HBuilder-Integrate-AS\app\libs\tx_weibo_sdk-httpclient-3.0.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.android.support:support-vector-drawable-25.2.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: com.android.support:support-core-utils-25.2.0" level="project" />
     <orderEntry type="module" module-name="certificateCamera" exported="" />
   </component>
 </module>

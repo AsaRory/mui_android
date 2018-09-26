@@ -10,19 +10,14 @@
 		<script type="text/javascript" src="./js/test.js"></script>
 		<script type="text/javascript">
 		document.addEventListener('plusready',function(){
-		// Androidï¿½ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½
+		// Android´¦Àí·µ»Ø¼ü
 		plus.key.addEventListener('backbutton',function(){
 				plus.runtime.quit();
 		},false);
 		},false);
 
   		function pluginShow() {
-            plus.plugintest.PluginTestFunction("Html5","Plus","AsyncFunction","MultiArgument!", function( result ) {
-            alert( result[0]  + "_" + result[1]  + "_" + result[2]  + "_" + result[3] );
-            },
-            function(result){
-            alert(result)
-            });
+            plus.plugintest.PluginTestFunction("Html5","Plus","AsyncFunction","MultiArgument!", function( result ) {alert( result[0]  + "_" + result[1]  + "_" + result[2]  + "_" + result[3] );},function(result){alert(result)});
         }
         
         function pluginShowArrayArgu() {

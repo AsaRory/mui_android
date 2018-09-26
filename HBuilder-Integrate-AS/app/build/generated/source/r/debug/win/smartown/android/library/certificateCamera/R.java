@@ -8,22 +8,22 @@ package win.smartown.android.library.certificateCamera;
 
 public final class R {
     public static final class color {
-        public static final int preview_mock = 0x7f070006;
+        public static final int preview_mock = 0x7f0a002f;
     }
     public static final class id {
-        public static final int camera_close = 0x7f0a0004;
-        public static final int camera_crop = 0x7f0a0002;
-        public static final int camera_crop_container = 0x7f0a0001;
-        public static final int camera_flash = 0x7f0a0006;
-        public static final int camera_option = 0x7f0a0003;
-        public static final int camera_result = 0x7f0a0007;
-        public static final int camera_result_cancel = 0x7f0a0008;
-        public static final int camera_result_ok = 0x7f0a0009;
-        public static final int camera_surface = 0x7f0a0000;
-        public static final int camera_take = 0x7f0a0005;
+        public static final int camera_close = 0x7f0b0062;
+        public static final int camera_crop = 0x7f0b0060;
+        public static final int camera_crop_container = 0x7f0b005f;
+        public static final int camera_flash = 0x7f0b0064;
+        public static final int camera_option = 0x7f0b0061;
+        public static final int camera_result = 0x7f0b0065;
+        public static final int camera_result_cancel = 0x7f0b0066;
+        public static final int camera_result_ok = 0x7f0b0067;
+        public static final int camera_surface = 0x7f0b005e;
+        public static final int camera_take = 0x7f0b0063;
     }
     public static final class layout {
-        public static final int activity_camera = 0x7f040000;
+        public static final int activity_camera = 0x7f04001b;
     }
     public static final class mipmap {
         public static final int camera_close = 0x7f030000;
@@ -38,6 +38,6 @@ public final class R {
         public static final int camera_take = 0x7f030009;
     }
     public static final class string {
-        public static final int touch_to_focus = 0x7f060003;
+        public static final int touch_to_focus = 0x7f060024;
     }
 }

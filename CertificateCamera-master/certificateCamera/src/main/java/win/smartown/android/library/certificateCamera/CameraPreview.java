@@ -181,7 +181,8 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
     public void takePhoto(Camera.PictureCallback pictureCallback) {
         if (camera != null) {
             camera.takePicture(null, null, pictureCallback);
-            camera.stopPreview();
+            //camera.stopPreview();
+            new Thread().start();
         }
     }
 

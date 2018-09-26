@@ -1,0 +1,7 @@
+#Sun Sep 23 15:25:58 CST 2018
+base.0=D\:\\YunFile\\github\\mui_android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_3945c93087af07680963b0e8fb9d6ed1f137aeb0
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=D\:\\YunFile\\github\\mui_android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_f65022a459e2c8977b8fbe5a916fd78108c19a7e\\classes.dex
+base.1=D\:\\YunFile\\github\\mui_android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_f65022a459e2c8977b8fbe5a916fd78108c19a7e
+file.0=D\:\\YunFile\\github\\mui_android\\HBuilder-Integrate-AS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_3945c93087af07680963b0e8fb9d6ed1f137aeb0\\classes.dex

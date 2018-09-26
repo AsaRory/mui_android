@@ -35,7 +35,7 @@
 		<feature name="Statistic" value="io.dcloud.feature.statistics.StatisticsFeatureImpl"/>
 		<feature name="Accelerometer" value="io.dcloud.feature.sensor.AccelerometerFeatureImpl"/>
 		<feature name="Orientation" value="io.dcloud.feature.sensor.OrientationFeatureImpl"/>
-		<feature name="NativeObj" value="io.dcloud.feature.nativeObj.FeatureImpl"/>		
+		<feature name="NativeObj" value="io.dcloud.feature.nativeObj.FeatureImpl"/>
 		<feature name="Geolocation" value="io.dcloud.js.geolocation.GeolocationFeatureImpl"/>
 		<feature name="Payment" value="io.dcloud.feature.payment.PaymentFeatureImpl">
 			<module name="AliPay" value="io.dcloud.feature.payment.alipay.AliPay"/>
@@ -55,15 +55,15 @@
 			<module name="OAuth-MiUi" value="io.dcloud.feature.oauth.miui.MiUiOAuthService"/>
 		</feature>
 		<feature name="Stream" value="io.dcloud.appstream.js.StreamAppFeatureImpl"/>
-		<feature
-            name="plugintest"
-            value="com.example.H5PlusPlugin.PGPlugintest" />
-	</features>	
+		<feature name="plugintest" value="org.example.H5PlusPlugin.PGPlugintest" />
+	</features>
 
 	<services>
 		<service name="push" value="io.dcloud.feature.aps.APSFeatureImpl"/>
 		<service name="Statistic" value="io.dcloud.feature.statistics.StatisticsBootImpl"/>
 		<service name="Downloader" value="io.dcloud.net.DownloaderBootImpl"/>
+
+		<service name="plugintest" value="org.example.H5PlusPlugin.PGPlugintest"/>
         <!--<service name="Maps" value="io.dcloud.js.map.MapInitImpl"/>-->
 	</services>
 </properties>

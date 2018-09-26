@@ -9,8 +9,10 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import win.smartown.android.library.certificateCamera.CameraActivity;
 
@@ -30,13 +32,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         imageView = (ImageView) findViewById(R.id.main_image);
+        Toast.makeText(MainActivity.this,"333",Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+
+       /* Log.i("dianji", "requestCode"+requestCode);
+        Log.i("dianji", "resultCode"+resultCode);
+        Log.i("dianji", "data"+data.getStringExtra("index"));*/
+
         if (requestCode == CameraActivity.REQUEST_CODE && resultCode == CameraActivity.RESULT_CODE) {
             //获取文件路径，显示图片
             final String path = CameraActivity.getResult(data);
+
+
+
             if (!TextUtils.isEmpty(path)) {
                 imageView.setImageBitmap(BitmapFactory.decodeFile(path));
             }
