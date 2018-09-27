@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" >
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">拍照</h1>
+		</header>
+		
+		<button type="button" onclick="captureImage()" style="margin-top:300px;">
+			
+			点击
+			
+		</button>
+		
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/app.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			
+			document.addEventListener( "plusready", onPlusReady, false );
+			
+			// 扩展API加载完毕，现在可以正常调用扩展API 
+			function onPlusReady() {
+				
+			    var cmr = plus.camera.getCamera();
+			    console.log(cmr);
+			    console.log("3333333");
+			    //alert( "Camera supperted image resolutions: " + cmr.supportedImageResolutions );
+
+
+			}
+			
+			// 拍照
+function captureImage(){
+    var cmr = plus.camera.getCamera();
+    var res = cmr.supportedImageResolutions[0];
+    var fmt = cmr.supportedImageFormats[0];
+    console.log("Resolution: "+res+", Format: "+fmt);
+    cmr.captureImage( function( path ){
+            alert( "Capture image success: " + path );  
+        },
+        function( error ) {
+            alert( "Capture image failed: " + error.message );
+        },
+        {resolution:res,format:fmt}
+    );
+}
+
+	
+			
+		</script>
+	</body>
+
+</html>

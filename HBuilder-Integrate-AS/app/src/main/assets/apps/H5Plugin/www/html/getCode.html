@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="../css/mui.min.css" rel="stylesheet" />
+    <link href="../css/app.css" rel="stylesheet" />
+    <link href="../css/login.css" rel="stylesheet" />
+</head>
+
+<body style="background: #ffffff;">
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">注册登录</h1>
+    </header>
+
+    <div class="mui-content">
+
+        <div class="center row">
+            <span class="code_text">请输入111****1111的短信验证码</span>
+            <span class="sixty">60秒后可重新获取</span>
+        </div>
+
+
+        <div class="number row">
+            <div class="numin row">
+                <span class="inutVal"></span>
+                <div class="cursor"></div>
+            </div>
+            <div class="numin row">
+                <span class="inutVal"></span>
+                <span class="cursor hideClass"></span>
+            </div>
+            <div class="numin row">
+                <span class="inutVal"></span>
+                <span class="cursor hideClass"></span>
+            </div>
+            <div class="numin row">
+                <span class="inutVal"></span>
+                <span class="cursor hideClass"></span>
+            </div>
+            <div class="numin row">
+                <span class="inutVal"></span>
+                <span class="cursor hideClass"></span>
+            </div>
+            <div class="numin row">
+                <span class="inutVal"></span>
+                <span class="cursor hideClass"></span>
+            </div>
+        </div>
+
+        <input type="tel" class="realInput" maxlength="6" oninput="if(value.length>6)value=value.slice(0,6)" pattern="[0-9]*">
+
+        <button type="button" class="mui-btn mui-btn-link next" onclick="login();">注册并登录</button>
+
+        <div class="bottom row">
+            <img src="../images/agress_icon.png" class="selectRadio" onclick="agreeBtn();" />
+            <span class="bottom-next">点击下一步表示同意</span>
+            <span class="bottom-a" onclick="openAgree();">《用户注册协议》</span>
+        </div>
+    </div>
+
+    <script src="../js/mui.min.js"></script>
+    <script src="../js/jquery-2.1.1.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/myStorage.js"></script>
+    <script src="html5plus://ready"></script>
+    <script type="text/javascript">
+        mui.init();
+
+        var intervalObj, time = 60,
+            phone;
+        mui.plusReady(function() {
+            //上页中的 传递的值
+            var self = plus.webview.currentWebview();
+            phone = self.phone;
+            var phoneHead = self.phone.substring(0, 3);
+            var phoneEnd = self.phone.substring(7);
+            $(".code_text").html("请输入" + phoneHead + "****" + phoneEnd + "的短信验证码");
+
+            //sendsms(self.phone);
+        });
+
+        //得到验证码
+        function sendsms(phone) {
+            Global.commonAjax({
+                    url: "app/sendsms/" + phone
+                },
+                function(data) {
+					mui.toast("验证码发送成功");
+                },
+                function(err) {
+                    mui.toast("发送失败");
+                });
+        }
+
+        //网络请求
+        function loginAjax(phone, code) {
+        		console.log(phone+"------"+code);
+        		var params = {
+        			mobileNo: phone,
+                smsCode: code
+        		}
+            Global.commonAjax({
+                    url: 'app/registerlogin',
+                    method: "POST",
+                    data: params
+                },
+                function(data) {
+                    //广告
+                    if(data.toFindAd){
+                    		myStorage.setItem("toFindAd", data.toFindAd);
+                    }
+                    
+                    //用户个人信息
+                    myStorage.setItem("user", data.user);
+                    //用户属性信息
+                    myStorage.setItem("userInfo", data.userInfo);
+                    //钱包
+                    myStorage.setItem("wallet", data.wallet);
+                    //token
+                    myStorage.setItem("userToken", data.userToken);
+
+                    mui.openWindow({
+                        url: 'home.html',
+                        id: 'home.html',
+                        waiting: {
+                            autoShow: false
+                        }
+                    })
+                },
+                function(err) {
+                    mui.toast("登录失败");
+                })
+        }
+
+        countDown();
+
+        function countDown() {
+            intervalObj = setInterval(function() {
+                time--;
+                if (time == 0) {
+                    time = 60;
+                    clearInterval(intervalObj);
+                    $(".sixty").text("重新获取");
+                } else {
+                    $(".sixty").text(time + "秒后可重新获取");
+                }
+
+            }, 1000);
+        }
+
+        $('.sixty').click(function() {
+            if ($(this).text() == "重新获取") {
+                countDown();
+                login();
+            }
+        })
+
+        var nativeWebview, imm, InputMethodManager;
+        var initNativeObjects = function() {
+            if (mui.os.android) {
+                var main = plus.android.runtimeMainActivity();
+                var Context = plus.android.importClass("android.content.Context");
+                InputMethodManager = plus.android.importClass("android.view.inputmethod.InputMethodManager");
+                imm = main.getSystemService(Context.INPUT_METHOD_SERVICE);
+            } else {
+                nativeWebview = plus.webview.currentWebview().nativeInstanceObject();
+            }
+        };
+        var showSoftInput = function() {
+            if (mui.os.android) {
+                imm.toggleSoftInput(0, InputMethodManager.SHOW_FORCED);
+            } else {
+                nativeWebview.plusCallMethod({
+                    "setKeyboardDisplayRequiresUserAction": false
+                });
+            }
+            setTimeout(function() {
+                var inputElem = document.querySelector('input');
+                inputElem.focus();
+                inputElem.parentNode.classList.add('mui-active'); //第一个是search，加上激活样式
+            }, 1);
+        };
+
+        $(".realInput").bind("input propertychange", function() {
+            var value = $(".realInput").val();
+            var length = value.length;
+
+            $(".inutVal").each(function(index) {
+                if (length > index) {
+                    $(this).text(value[index]);
+                } else {
+                    $(this).text("");
+                }
+                console.log($(this))
+            });
+
+            $(".cursor").each(function(index) {
+                if (length != index) {
+                    $(this).addClass("hideClass");
+                }
+
+                if (length == index) {
+                    $(this).removeClass("hideClass");
+                }
+                console.log($(this))
+            });
+
+            if (length == 6) {
+                //输入完成
+
+                return;
+            }
+        });
+        /**
+         * 同意
+         */
+        function agreeBtn() {
+            console.log($('.selectRadio').attr('src'))
+            if ($('.selectRadio').attr('src') == '../images/agress_icon.png') {
+                $('.selectRadio').attr('src', '../images/un_selected.png');
+            } else {
+                $('.selectRadio').attr('src', '../images/agress_icon.png');
+            }
+        }
+
+        /**
+         * 登录的网络请求
+         */
+        function login() {
+            if ($('.selectRadio').attr('src') != '../images/agress_icon.png') {
+                mui.toast("请同意用户协议")
+            } else {
+                var value = $(".realInput").val();
+                var length = value.length;
+                if (length < 6) {
+                    mui.toast("请输入正确的验证码");
+                } else {
+                    loginAjax(phone, value.substring(0, 6));
+                }
+            }
+        }
+
+        /**
+         * 打开用户协议
+         */
+        function openAgree() {
+
+            var registerTxt = $.ajax({
+                url: "register.html",
+                async: false
+            });
+            // var temp=$.parseHTML(registerTxt.responseText);
+            Global.showModal(registerTxt.responseText)
+        }
+    </script>
+</body>
+
+</html>

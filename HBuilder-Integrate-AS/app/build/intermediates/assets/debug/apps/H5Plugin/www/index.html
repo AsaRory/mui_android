@@ -1,55 +1,146 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-		<meta name="HandheldFriendly" content="true"/>
-		<meta name="MobileOptimized" content="320"/>
-		<title>H5Plugin</title>
-		<script type="text/javascript" src="./js/common.js"></script>
-		<script type="text/javascript" src="./js/test.js"></script>
-		<script type="text/javascript">
-		document.addEventListener('plusready',function(){
-		// Android�������ؼ�
-		plus.key.addEventListener('backbutton',function(){
-				plus.runtime.quit();
-		},false);
-		},false);
 
-  		function pluginShow() {
+
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		
+		<style>
+			
+			.title{
+				margin: 20px 15px 10px;
+				color: #6d6d72;
+				font-size: 15px;
+			}
+			
+			.oa-contact-cell.mui-table .mui-table-cell {
+				padding: 11px 0;
+				vertical-align: middle;
+			}
+			
+			.oa-contact-cell {
+				position: relative;
+				margin: -11px 0;
+			}
+	
+			.oa-contact-avatar {
+				width: 75px;
+			}
+			.oa-contact-avatar img {
+				border-radius: 50%;
+			}
+			.oa-contact-content {
+				width: 100%;
+			}
+			.oa-contact-name {
+				margin-right: 20px;
+			}
+			.oa-contact-name, oa-contact-position {
+				float: left;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<div class="mui-content">
+			<ul id="list" class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell">
+
+					<a class="mui-navigate-right" href="html/login.html">login</a>
+
+				</li>
+
+
+				<li class="mui-table-view-cell" >
+
+					 <p class="heading">分享网页：</p>
+			<table style="width:100%;">
+				<tbody>
+					<tr>
+						<td style="width:20%;text-align:right;font-size:12px;">网页地址</td>
+						<td style="width:65%">
+              <input id="web_href" class="share_input" type="url" value="https://www.baidu.com/" placeholder="请输入要分享的网页地址"/>
+            </td>
+					</tr>
+					<tr>
+						<td style="width:20%;text-align:right;font-size:12px;">网页标题</td>
+						<td style="width:65%">
+              <input id="web_title" class="share_input" type="url" value="测试测试" placeholder="请输入要分享的网页地址"/>
+            </td>
+					</tr>
+					<tr>
+						<td style="width:20%;text-align:right;font-size:12px;">网页描述</td>
+						<td style="width:65%">
+              <input id="web_content" class="share_input" type="url" value="测试测试，赶紧跟我一起来体验！" placeholder="请输入要分享的网页描述"/>
+            </td>
+					</tr>
+				</tbody>
+			</table>
+      <p class="des">分享网页需要设置缩略图，否则可能会分享失败。</p>
+      <div class="button" onclick="shareWeb()">分享网页</div>
+      
+      <p class="heading">分享文本：</p>
+			<textarea id="text_title" class="sharecontent" rows="3">测试测试测试</textarea>
+      <p class="des">注意：QQ分享Android平台需设置链接地址（iOS可选）。</p>
+      <div class="button" onclick="shareText()">分享文本</div>
+      
+
+				</li>
+
+		</ul>
+		</div>
+		
+		<button id="download" onclick="createDownload()">Create download task</button>
+
+		<button class="button" onclick="pluginShow()">推送()</button>
+
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/myStorage.js"></script>
+	<script src="js/plugin.js"></script>
+	<script>
+
+	function pluginShow() {
+	        alert();
             plus.plugintest.PluginTestFunction("Html5","Plus","AsyncFunction","MultiArgument!", function( result ) {alert( result[0]  + "_" + result[1]  + "_" + result[2]  + "_" + result[3] );},function(result){alert(result)});
         }
-        
-        function pluginShowArrayArgu() {
-            plus.plugintest.PluginTestFunctionArrayArgu( ["Html5","Plus","AsyncFunction","ArrayArgument!"], function( result ) {alert( result );},function(result){alert(result)});
-        }
-        
-        function pluginGetString()
-        {
-            alert(plus.plugintest.PluginTestFunctionSync("Html5","Plus","SyncFunction","MultiArgument!"));
-        }
-        
-        function pluginGetStringArrayArgu()
-        {
-            var Argus = plus.plugintest.PluginTestFunctionSyncArrayArgu(["Html5","Plus","SyncFunction","ArrayArgument!"]);
-            alert( Argus.RetArgu1 + "_" +  Argus.RetArgu2 + "_" + Argus.RetArgu3  + "_" + Argus.RetArgu4 );
-        }
-    
-		</script>
-		<link rel="stylesheet" href="./css/common.css" type="text/css" charset="utf-8"/>
-	</head>
-	<body>
-		<header>
-			<div class="nvbt" onclick="back();"><div class="iback"></div></div>
-			<div class="nvtt">PluginTest</div>
-		</header>
-		<div id="dcontent" class="dcontent">
-			<br/>
-			 <div class="button" onclick="pluginShow()">PluginTestFunction()</div>
-            <div class="button" onclick="pluginShowArrayArgu()">PluginTestFunctionArrayArgu()</div>
-            <div class="button" onclick="pluginGetString()">PluginTestFunctionSync()</div>
-            <div class="button" onclick="pluginGetStringArrayArgu()">PluginTestFunctionSyncArrayArgu()</div>	
-			<br/>
-		</div>
-	</body>
+		
+//		 window.location.href = "http://project.youzewang.com/app/app.html";
+		
+		
+var sweixin=null;
+var buttons=[
+  {title:'我的好友',extra:{scene:'WXSceneSession'}},
+  {title:'朋友圈',extra:{scene:'WXSceneTimeline'}},
+  {title:'我的收藏',extra:{scene:'WXSceneFavorite'}}
+];
+// H5 plus事件处理
+function plusReady(){
+	
+}
+
+
+
+
+
+
+if(window.plus){
+	plusReady();
+}else{
+	document.addEventListener('plusready', plusReady, false);
+}
+
+   
+</script>
+
 </html>

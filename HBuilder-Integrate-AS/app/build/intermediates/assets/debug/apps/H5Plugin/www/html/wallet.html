@@ -1,0 +1,378 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>提现金额</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="../css/mui.min.css" rel="stylesheet" />
+    <link href="../css/app.css" rel="stylesheet" />
+    <style type="text/css">
+        .head_wrap {
+            background-image: url(../images/wallet_head_bg.png);
+            background-size: 100% 265px;
+            height: 265px;
+            padding: 15px;
+            color: #ffffff!important;
+        }
+        
+        .title_wrap {
+            justify-content: space-between;
+            align-items: center;
+            color: #ffffff;
+        }
+        
+        .title_wrap a {
+            color: #ffffff;
+        }
+        
+        .title_wrap img {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .money_text {
+            font-size: 36px;
+            text-align: center;
+            margin-top: 44px;
+        }
+        
+        .money_info {
+            font-size: 12px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        .content_wrap {
+            width: 100%;
+            margin-top: 60px;
+            border-radius: 5px;
+            background: #ffffff;
+            padding: 25px 16px;
+        }
+        
+        .money_dirction {
+            color: #333333;
+            font-size: 12px;
+            opacity: 0.5;
+        }
+        
+        .money {
+            color: #333333;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .money input {
+            color: #333333;
+            font-size: 30px;
+        }
+        
+        input::-webkit-input-placeholder {
+            font-size: 20px;
+            padding-top: 5px;
+        }
+        
+        .next_btn {
+            width: 50%;
+            border-radius: 30px;
+            margin: 30px 25% 20px;
+            text-align: center;
+            padding: 10px 0rem;
+            cursor: pointer;
+            background: #ff493D;
+            color: #ffffff;
+        }
+        
+        .set_zfb {
+            color: #333333;
+            opacity: 0.5;
+            font-size: 12px;
+            text-align: center;
+            text-decoration: underline;
+            margin-top: 40px;
+        }
+        
+        .modal-mask {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            z-index: 10;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .modal-dialog {
+            width: 80%;
+            max-height: 60%;
+            overflow: auto;
+            background: #ffffff;
+            border-radius: 18px;
+            position: relative;
+            border-radius: 20px;
+        }
+        
+        .modal-dialog .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 23px;
+            height: 23px;
+            z-index: 100000;
+        }
+        
+        .modal-dialog input::-webkit-input-placeholder {
+            font-size: 16px;
+            color: #9499A4;
+            height: 20px;
+            line-height: 20px;
+        }
+        
+        .modal-dialog .money input {
+            font-size: 20px;
+        }
+        
+        .modal-content {
+            padding: 25px 27px;
+            font-size: 12px;
+            position: relative;
+            z-index: 10000;
+            font-size: 12px;
+            color: #333333;
+            background: #ffffff;
+            ;
+        }
+        
+        .dialog_title {
+            font-size: 18px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        
+        .modal-dialog .icon {
+            width: 21px;
+            height: 22px;
+        }
+        
+        .dialog_content .money {
+            border-bottom: 1px solid #9499A4;
+            margin-top: 5px;
+        }
+        
+        .dialog_content .sure_btn {
+            margin: 10px 25% 0px;
+            width: 50%;
+            border-radius: 30px;
+            text-align: center;
+            padding: 10px 0rem;
+            cursor: pointer;
+            background: #ff493D;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="head_wrap">
+        <div class="row title_wrap">
+            <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+            <span class="">提现金额</span>
+            <img src="../images/wallet_detail_icon.png" onclick="goToWalletDetail();" />
+        </div>
+
+        <div class="money_text">600.00</div>
+        <div class="money_info">钱包余额(元)</div>
+
+        <div class="content_wrap">
+            <div style="color: #333333; font-size: 18px;">我要提现</div>
+            <div class="money_dirction">(最低提现50元，仅可提现整数金额)</div>
+
+            <div class="mui-input-row money row">
+                <label style="width: 15%;">￥</label>
+
+                <input type="tel" class="mui-input-clear money_input" maxlength="8" oninput="if(value.length>8)value=value.slice(0,8)" onkeyup="value=value.replace(/[^\d]/g,'')" placeholder="请输入金额">
+
+            </div>
+
+            <button type="button" class="mui-btn mui-btn-link next_btn" onclick="getMoney();">立即提现</button>
+
+        </div>
+
+        <div class="set_zfb" onclick="setZFB();">设置收费支付宝</div>
+    </div>
+
+    <!--弹窗-->
+    <div class="modal-mask row hideClass">
+        <div class="modal-dialog">
+            <img class="close" src="../images/close_icon.png" onclick="closeDialg();" />
+            <div class="modal-content" style="text-align: center;">
+                <div class="dialog_title">请输入支付宝账号</div>
+                <div class="dialog_content">
+                    <div class="mui-input-row money row">
+                        <img src="../images/name_icon.png" class="icon" />
+                        <label style="width: 5px;"></label>
+                        <input type="text" class="mui-input-clear accountName" placeholder="请输入收款人姓名">
+
+                    </div>
+
+                    <div class="mui-input-row money row">
+                        <img src="../images/zfb_icon.png" class="icon" />
+                        <label style="width: 5px;"></label>
+                        <input type="text" class="mui-input-clear accountNum" placeholder="请输入收款人账号">
+                    </div>
+
+                    <button type="button" class="mui-btn mui-btn-link sure_btn" onclick="sureAccount();">确定</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/mui.min.js"></script>
+    <script src="../js/jquery-2.1.1.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/myStorage.js"></script>
+    <!--<script src="html5plus://ready"></script>-->
+    <script type="text/javascript">
+        mui.init();
+
+        //钱包余额
+        var wallet = myStorage.getItem("wallet");
+        
+        if (wallet && wallet.balance) {
+            $(".money_text").html(parseInt(wallet.balance));
+        }else{
+        		$(".money_text").html("0");
+        };
+        
+        mui.plusReady(function() {
+        		var self = plus.webview.currentWebview();
+        		console.log(self.miniApplyAmount)
+	        //最小提现余额
+	        $(".money_dirction").html("(最低提现"+self.miniApplyAmount+"元，仅可提现整数金额)");
+        });
+        
+
+        /**
+         * 钱包明细 
+         */
+        function goToWalletDetail() {
+            mui.openWindow({
+                url: 'walletDetail.html',
+                id: 'walletDetail.html',
+                waiting: {
+                    autoShow: false
+                },
+            })
+        }
+
+        //立即提现
+        function getMoney() {
+            if (isSetAlipay == "N") {
+                setZFB();
+            } else {
+                //提现申请
+                var money = $(".money_input").val();
+                if (!money) {
+                    mui.toast("请输入金额");
+                    return;
+                }
+
+                if (parseInt(money) < 50) {
+                    mui.toast("请输入大于最低提现额的数字");
+                    return;
+                }
+                
+                if(parseInt($(".money_text").html()) < parseInt(money)){
+                		mui.toast("超过余额");
+                    return;
+                }
+				var params = {applyAmount: money};
+                Global.commonAjax({
+                        url: "user/apply/deposit",
+                        data: params,
+                        method: "POST"
+                    },
+                    function(data) {
+						mui.toast("申请提现成功");
+						$(".money_input").val("");
+                    },
+                    function(err) {
+						mui.toast("申请提现失败");
+                    }
+                )
+            }
+        }
+        //设置账号
+        var accountName, accountNum;
+
+        function sureAccount() {
+            accountName = $(".accountName").val();
+            accountNum = $(".accountNum").val();
+            if (!accountName) {
+                mui.toast("请设置收款人姓名");
+                return;
+            }
+            if (!accountNum) {
+                mui.toast("请设置收款人账号");
+                return;
+            }
+			var params = {
+				alipayName: accountName,
+                alipayAccount: accountNum
+			}
+            Global.commonAjax({
+                    url: "user/modify/alipay",
+                    data: params,
+                    method: "POST"
+                },
+                function(data) {
+            			closeDialg();
+                		mui.toast("设置账户成功");
+                    
+                },
+                function(err) {
+					mui.toast("设置账户失败");
+                }
+           )
+        }
+
+        //设置支付宝
+        function setZFB() {
+            var dialogEle = document.querySelector('.modal-mask');
+            dialogEle.classList.remove('hideClass');
+        }
+
+        function closeDialg() {
+            var dialogEle = document.querySelector('.modal-mask');
+            dialogEle.classList.add('hideClass');
+        }
+        //是否设置支付宝
+        var isSetAlipay = "N";
+        function isSetAliPay(){
+        		Global.commonAjax({ url: "user/input/status" },
+	           function(data) {
+	               var url = "";
+	               if(data){
+	               		isSetAlipay = data.isSetAlipay;
+	               }
+	               
+	           },
+	           function(err) {
+					mui.toast(err.msg);
+	           }
+	       );
+        }
+        
+       
+    </script>
+</body>
+
+</html>
